@@ -503,6 +503,7 @@ span{
 
     .about{
         flex-direction: column;
+        padding-left: 0;
     }
 
     .aboutContent{
