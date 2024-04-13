@@ -503,11 +503,11 @@ span{
 
     .about{
         flex-direction: column;
-        padding-left: 0;
     }
 
     .aboutContent{
         text-align: center;
+        padding-left: 0;
     }
 
     .aboutContent h2{
