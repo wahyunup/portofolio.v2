@@ -485,6 +485,7 @@ span{
 
     .homeContainer{
         order: 2;
+        text-align: center;
     }
 
     .homeContainer h3{
@@ -502,6 +503,14 @@ span{
 
     .about{
         flex-direction: column;
+    }
+
+    .aboutContent{
+        text-align: center;
+    }
+
+    .aboutContent h2{
+        text-align: center;
     }
 
     .aboutImg img{
