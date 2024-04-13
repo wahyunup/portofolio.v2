@@ -132,18 +132,18 @@
     <h2 class="heading">
         contact <span>Me</span>
     </h2>
-    <form action="#">
+    <form action="https://formspree.io/f/xvoevwqb" method="post">
         <div class="inputBox">
-            <input type="text" placeholder="Full Name" id="">
-            <input type="Email" placeholder="Email address" id="">
+            <input name="fullname" type="text" placeholder="Full Name">
+            <input name="email" type="Email" placeholder="Email address" required>
         </div>
 
         <div class="inputBox">
-            <input type="number" placeholder="Mobile Number" id="">
-            <input type="text" placeholder="Email Subject" id="">
+            <input name="mobilephone" type="number" placeholder="Mobile Number">
+            <input name="emailSubject" type="text" placeholder="Email Subject">
         </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="your message"></textarea>
-        <input type="submit" value="Send Message" class="btn">
+        <textarea name="textares" id="" cols="30" rows="10" placeholder="your message"></textarea>
+        <input name="button" type="submit" value="Send Message" class="btn">
     </form>
 
 <!-- footer section -->
@@ -153,6 +153,10 @@
     <div class="footer">
         <div class="footerText">
             <p>Copyright &copy; 2024 by @wahyunup | All Right Reserved.</p>
+        </div>
+
+        <div class="footerIconTop">
+            <a href="#home"> <i class="fa-solid fa-angle-up"></i></a>
         </div>
     </div>
 </footer>
@@ -164,10 +168,16 @@
 <script>
     AOS.init();
 </script>
+
+<!-- typed script -->
 <script>
     const typed = new Typed('#multipleText', {
-    stringsElement: 'Frontend Developer'
-  });
+    strings:['Enthusiastic', 'Frontend Developer', 'Graphic Designer'],
+    typeSpeed: 70,
+    backSpeed: 70,
+    backDelay: 1000,
+    loop:true,
+    });
 </script>
 <script src="main.js"></script>
 

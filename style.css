@@ -20,7 +20,6 @@
 
 html{
     font-size: 55%;
-    overflow: hidden;
 }
 
 body{
@@ -60,7 +59,7 @@ section{
 }
 
 .navbar a:hover,
-.navbar a:active{
+.navbar a.active{
     color: var(--main-color)
 }
 
@@ -233,11 +232,11 @@ span{
     border: .2rem solid var(--bg-color);
     text-align: center;
     transition: .5s ease;
+    transform: scale(1.5);
 }
 
 .serviceBox:hover{
-    border-color: var(--main-color) ;
-    transform: scale(1.02);
+    border-color: var(--main-color);
 }
 
 .serviceBox i{
@@ -270,8 +269,9 @@ span{
 }
 
 .projectContent{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
+    width: 50vh;
+    justify-content: center;
     align-items: center;
     gap: 2.5rem;
 }
@@ -384,17 +384,41 @@ span{
 
 .footer{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-   
+   padding: 2rem 9%;
+   background-color: var(--snd-bg-color);
 }
 
 .footerText{
     font-size: 1.6rem;
 }
 
+.footerIconTop{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem  1rem;
+    transition: .5s ease;
+    background-color: var(--main-color);
+    border-radius: .8rem;
+}
+
+.footerIconTop:hover{
+    box-shadow: 0 0 1rem var(--main-color) ;
+}
+
+.footerIconTop a i{
+    font-size: 2.4rem;
+    color: var(--snd-bg-color);
+}
+
+
+
 /* breakpoint */
+
+
 @media (max-width: 1200px){
     html {
         font-size: 48%;
@@ -404,8 +428,9 @@ span{
 @media (max-width: 991px){
     .header{
         padding: 2rem 3%;
+    }
 
-        section{
+    section{
             padding: 10rem 3%;
         }
 
@@ -424,7 +449,6 @@ span{
         .footer{
             padding: 2rem 3%;
         }
-    }
 }
 
 @media (max-width: 768px){
@@ -433,11 +457,12 @@ span{
     }
 
     .navbar{
+        width: 100%;
         position: absolute;
         top: 100%;
         left: 0;
         padding: 3rem 3%;
-        background: var(--main-color);
+        background: var(--snd-bg-color);
         border-top: .1rem solid rgba(0,0,0, .2);
         box-shadow: 0.5rem rgba(0,0,0, .2);
         display: none;
@@ -492,8 +517,8 @@ span{
         margin-bottom: 3rem;
     }
 
-    .projectContainer{
-        grid-template-columns: repeat 2,1fr;
+    .projectContent{
+      width: fit-content;
     }
 }
 

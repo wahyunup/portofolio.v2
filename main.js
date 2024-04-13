@@ -3,7 +3,7 @@ let menuIcon = document.querySelector('#menuIcon');
 let navbar = document.querySelector('.navbar'); 
 
 menuIcon.onclick = () =>{
-    menuIcon.classList.toggle('fa-xmark');
+    menuIcon.classList.toggle('fa-xmark');                          
     navbar.classList.toggle('active');
 }
 // ============================scroll section active link======================
@@ -45,14 +45,3 @@ scrollReveal().reveal('.homeContainer, .header', {origin: `top`});
 scrollReveal().reveal('.home-img, .serviceContainer, .portofolioBox, .contact Form', {origin: `buttom`});
 scrollReveal().reveal('.socialMedia h1, .aboutImg', {origin: `left`});
 scrollReveal().reveal('.socialMedia p, .aboutContent', {origin: `left`});
-
-// ========================== type js==================================
-const typed = document.getElementById('#multipleText')
-const type = new typed ('#multipleText', {
-    strings:['Frontend Developer', 'Graphic Designer'],
-    typeSpeed: 70,
-    backSpeed: 70,
-    backDelay: 1000,
-    loop:true,
-});
-
