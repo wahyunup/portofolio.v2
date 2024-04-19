@@ -38,11 +38,12 @@ section{
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    background: var(--snd-bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1;
+    box-shadow: 0 0 4rem var(--bg-color);
 }
 
 .logo{
@@ -155,12 +156,12 @@ span{
     box-shadow: none;
 }
 
-.about{
+#about{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background-color: var(--snd-bf-color);
+    background-color: var(--snd-bg-color);
 }
 
 .aboutImg img{
@@ -266,6 +267,10 @@ span{
 
 .serviceBox a:hover{
     box-shadow: none;
+}
+
+#project{
+    background-color: var(--snd-bg-color);
 }
 
 .projectContent{
