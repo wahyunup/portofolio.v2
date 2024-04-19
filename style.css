@@ -270,7 +270,9 @@ span{
 
 .projectContent{
     display: flex;
-    width: 50vh;
+    flex-wrap: wrap;
+    padding: 4em 1em;
+    width: 100%;
     justify-content: center;
     align-items: center;
     gap: 2.5rem;
@@ -282,6 +284,7 @@ span{
     position: relative;
     box-shadow: 0 0 1rem var(--bg-color);
     display: flex;
+    width: 40%;
     overflow: hidden;
 }
 
@@ -336,10 +339,12 @@ span{
     color: var( --bg-color);
 }
 
-
-
 .projectContent .portofolioBox h4{
    font-size: 3rem;
+}
+
+.toolsBox{
+    margin-top: 8px;
 }
 
 .contact h2{
@@ -507,7 +512,7 @@ span{
 
     .aboutContent{
         text-align: center;
-        padding-left: 0;
+        padding-left: 0;    
     }
 
     .aboutContent h2{
@@ -529,6 +534,12 @@ span{
 
     .projectContent{
       width: fit-content;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .projectContent .portofolioBox{
+        width: 100%;
     }
 }
 
