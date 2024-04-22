@@ -60,7 +60,7 @@ section{
 }
 
 .navbar a:hover,
-.navbar a.active{
+ a.active{
     color: var(--main-color)
 }
 
