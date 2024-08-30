@@ -59,8 +59,11 @@ section{
     padding-left: 20px;
 }
 
-.navbar a:hover,
- a.active{
+.navbar a:hover{
+    color: var(--main-color)
+}
+
+.navbar .active{
     color: var(--main-color)
 }
 
